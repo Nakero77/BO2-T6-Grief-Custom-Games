@@ -12,7 +12,6 @@
 #include maps\mp\gametypes_zm\_hud_message;
 #include maps\mp\zombies\_zm;
 
-
 main()
 {
 	replaceFunc(maps\mp\gametypes_zm\_zm_gametype::menu_onmenuresponse, scripts\zm\Grief_CustomGames_unified::menu_onmenuresponse);
@@ -43,7 +42,6 @@ on_player_connect()
 	player setClientDvar( "aim_automelee_enabled", 0 ); // comment this line to enable again the knife lunge
     }
 }
-
 
 menu_onmenuresponse()
 {
@@ -227,10 +225,6 @@ do_team_change()
 	}
 }
 
-
-
-
-
 set_team(team)
 {
     if(team == "just_joined")
@@ -279,6 +273,3 @@ set_team(team)
 	self [[ level.givecustomcharacters ]]();
     }
 }
-
-
-// Amateur coder, I just unified and adapted many functions from other codes to make Grief Custom Games more enjoyable
